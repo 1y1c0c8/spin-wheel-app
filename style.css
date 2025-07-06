@@ -22,6 +22,26 @@ canvas {
     margin-bottom: 20px;
 }
 
+.wheel-container {
+    position: relative;
+    width: 500px; /* 與 canvas 寬度相同 */
+    height: 500px; /* 與 canvas 高度相同 */
+    margin-bottom: 20px;
+}
+
+.pointer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #FF0000; /* 紅色三角形指針 */
+    z-index: 10; /* 確保指針在轉盤上方 */
+}
+
 button {
     padding: 10px 20px;
     font-size: 18px;
