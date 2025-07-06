@@ -31,14 +31,14 @@ canvas {
 
 .pointer {
     position: absolute;
-    top: 0;
+    top: -15px; /* 調整位置，讓指針尖端在轉盤上方 */
     left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 30px solid #FF0000; /* 紅色三角形指針 */
+    border-bottom: 30px solid #FF0000; /* 向上指向的紅色三角形 */
     z-index: 10; /* 確保指針在轉盤上方 */
 }
 
